@@ -5,20 +5,10 @@ body {
     background: linear-gradient(to right, #d71831, #4e5150);
     padding: 20px;
 }
-
 #header{
     margin-bottom: 30px;
     padding: 17px;
 }
-
-#main{
-    gap:30px;
-}
-
-section{
-    padding:20px
-}
-
 form input, form select {
     width: 100%;
     padding: 10px;
@@ -42,7 +32,100 @@ button {
     transition: 0.3s ease;
 }
 
-#location{
+#locationBtn{
     background-color: #d71831;
 }
+button:hover {
+    opacity: 0.9;
+}
+.sunny-bg {
+    background: linear-gradient(to right, #fceabb, #f8b500);
+    #toggleBtn, #getCityBtn{
+        background-color: #fceabb;
+        color:black
+    }
+    #toggleBtn:hover, #getCityBtn:hover{
+        background-color: #f8b500;
+        color:white
+    }
+    #locationBtn{
+        background-color: #f8b500;
+        color:black
+    }
+    #locationBtn:hover{
+        background-color: #fceabb;
+        color:white
+    }
+}
 
+.cloudy-bg {
+    background: linear-gradient(to right, #bdc3c7, #2c3e50);
+     #toggleBtn, #getCityBtn{
+        background-color: #bdc3c7;
+        color:black
+    }
+    #toggleBtn:hover, #getCityBtn:hover{
+        background-color: #2c3e50;
+        color:white
+    }
+    #locationBtn{
+        background-color: #2c3e50;
+        color:white
+    }
+    #locationBtn:hover{
+        background-color: #bdc3c7;
+        color:black
+    }
+}
+
+.rainy-bg {
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+     #toggleBtn, #getCityBtn{
+        background-color: #4e54c8;
+        color:white
+    }
+    #toggleBtn:hover, #getCityBtn:hover{
+        background-color: #8f94fb;
+        color:white
+    }
+    #locationBtn{
+        background-color: #8f94fb;
+        color:white
+    }
+    #locationBtn:hover{
+        background-color: #4e54c8;
+        color:white
+    }
+}
+
+.snow-bg {
+    background: linear-gradient(to right, #e6dada, #274046);
+    #toggleBtn, #getCityBtn{
+        background-color: #e6dada;
+        color:white
+    }
+    #toggleBtn:hover, #getCityBtn:hover{
+        background-color: #274046;
+        color:white
+    }
+    #locationBtn{
+        background-color: #274046;
+        color:white
+    }
+    #locationBtn:hover{
+        background-color: #e6dada;
+        color:white
+    }
+}
+.normal-bg {
+    background: linear-gradient(to right, #d71831, #4e5150);
+    #toggleBtn, #getCityBtn{
+        background-color: #4e5150;
+        color:white
+    }
+    #locationBtn{
+        background-color: #d71831;
+        color:white
+    }
+    
+}

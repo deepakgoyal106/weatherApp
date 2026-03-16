@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #d71831, #4e5150);
+    padding: 20px;
+}
+
+#header{
+    margin-bottom: 30px;
+    padding: 17px;
+}
+
+#main{
+    gap:30px;
+}
+
+section{
+    padding:20px
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+form select {
+    margin-top: 15px;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    background-color: #4e5150;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#location{
+    background-color: #d71831;
+}
+

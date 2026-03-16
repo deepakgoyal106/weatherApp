@@ -8,16 +8,18 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="flex justify-center items-center text-4xl font-bold shadow-lg bg-white p-4 rounded-lg" id="header">
+  
+    <header class="flex justify-center items-center text-4xl font-bold shadow-lg bg-white p-4 rounded-lg flex-col" id="header">
         <h1>Welcome to the Weather App</h1>
+        <section id="error" class="text-red-500 mt-2 text-3xl"></section>
     </header>
 
-    <main class="flex" id="main">
+    <main class="lg:flex gap-8">
         <section class="bg-white rounded-lg">
-            <form id="form">
-                <h2 class="text-3xl font-bold">Enter City Details</h1>
+            <form id="form" class="flex flex-col gap-4 p-4">
+                <h2 class="text-3xl font-bold">Enter City Details</h2>
                 <input type="text" placeholder="Enter city name" class="border border-gray-300 rounded-lg p-2" id="city">
-                <button type="button">Get Weather</button>
+                <button type="button" onclick="getCity()" id="getCityBtn">Get Weather</button>
                 
                 <section class="flex items-center my-4">
                     <hr class="flex-grow">
@@ -25,11 +27,15 @@
                     <hr class="flex-grow">
                 </section>
 
-                <button type="button" id="location" onclick="getLocation()">Use Current Location</button>
+                <button type="button" id="locationBtn" onclick="getLocation()">Use Current Location</button>
             </form>
         </section>
 
-        <section class="bg-white rounded-lg w-[100%]">rrr</section>
+        <section class="rounded-lg w-[100%] mt-10 lg:mt-0 flex flex-col gap-9">
+           
+            <section id="weather" class="bg-white rounded-lg"></section>
+            <section id="forecast" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"></section>  
+        </section>
     </main>
 
 

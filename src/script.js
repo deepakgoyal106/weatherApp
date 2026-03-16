@@ -169,6 +169,14 @@ function displayWeather(data){
         </button>
         </section>
     `;
+
+    //check for extreme weather
+    if(currentTempC > 40){
+        showError("⚠ Extreme Heat Alert! Stay hydrated.");
+    }
+    else if(currentTempC < 0){
+        showError("⚠ Extreme Cold Alert! Stay warm.");
+    }
     updateBackground(data.current.condition.text);
     
 }
@@ -266,6 +274,8 @@ function updateBackground(condition){
     }
 
 }
+
+
 
 
      

@@ -12,6 +12,7 @@ HTML, Tailwind CSS, and JavaScript.
 - Temperature toggle (°C / °F)
 - Extreme weather alerts
 - Dynamic weather backgrounds
+- Alert on temperature if high or too cold
 
 ## Technologies Used
 
@@ -29,3 +30,6 @@ HTML, Tailwind CSS, and JavaScript.
 ## API Used
 
 WeatherAPI.com
+
+## GITHUB Link
+https://github.com/deepakgoyal106/weatherApp

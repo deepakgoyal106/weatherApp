@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/output.css">
+    <script src="src/script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="flex justify-center items-center text-4xl font-bold shadow-lg bg-white p-4 rounded-lg" id="header">
+        <h1>Welcome to the Weather App</h1>
+    </header>
+
+    <main class="flex" id="main">
+        <section class="bg-white rounded-lg">
+            <form id="form">
+                <h2 class="text-3xl font-bold">Enter City Details</h1>
+                <input type="text" placeholder="Enter city name" class="border border-gray-300 rounded-lg p-2" id="city">
+                <button type="button">Get Weather</button>
+                
+                <section class="flex items-center my-4">
+                    <hr class="flex-grow">
+                    <span class="mx-3">OR</span>
+                    <hr class="flex-grow">
+                </section>
+
+                <button type="button" id="location" onclick="getLocation()">Use Current Location</button>
+            </form>
+        </section>
+
+        <section class="bg-white rounded-lg w-[100%]">rrr</section>
+    </main>
+
+
+</body>
+</html>
